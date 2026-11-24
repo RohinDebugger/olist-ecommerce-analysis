@@ -1,1 +1,33 @@
-# olist-ecommerce-analysis
+# Olist E-commerce Sales Analysis
+
+End-to-end analytics project on the Brazilian Olist e-commerce dataset.
+
+## Tools
+Python, Google BigQuery, SQL, Power BI
+
+## Pipeline
+CSV files -> Python script -> BigQuery tables -> SQL queries -> Power BI dashboard
+
+## What I did
+1. Wrote a Python script (`load_to_bigquery.py`) that loads 9 CSV files into BigQuery with one command.
+2. Checked row counts to confirm every table loaded fully (for example, orders: 99,441 rows and geolocation: 1,000,163 rows).
+3. Wrote SQL queries (joins and aggregations) to analyse sales.
+4. Built an interactive Power BI dashboard with a date slicer and a product category slicer.
+
+## Key results (delivered orders only)
+- Total revenue: 13.22M
+- Delivered orders: 96,478
+
+## Dashboard
+![Dashboard](dashboard.png)
+
+## Files
+- `load_to_bigquery.py`: loads all CSV files into BigQuery
+- `queries.sql`: SQL queries used for the analysis
+- `dashboard.png`: Power BI dashboard screenshot
+
+## How to run the loader
+1. Install Python and run `pip install google-cloud-bigquery`.
+2. Log in with `gcloud auth application-default login`.
+3. Put the Olist CSV files in the same folder as the script.
+4. Run `python load_to_bigquery.py`.
