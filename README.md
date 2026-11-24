@@ -30,4 +30,13 @@ CSV files -> Python script -> BigQuery tables -> SQL queries -> Power BI dashboa
 1. Install Python and run `pip install google-cloud-bigquery`.
 2. Log in with `gcloud auth application-default login`.
 3. Put the Olist CSV files in the same folder as the script.
-4. Run `python load_to_bigquery.py`.
+4. Run `python load_to_bigquery.py`
+
+## Business Insights
+
+1. **Average order value is about 137 BRL.** Total revenue of 13.22M across 96,478 delivered orders works out to roughly 137 per order.
+2. **Three categories lead revenue:** health_beauty, watches_gifts and bed_bath_table are the top three in the category chart.
+3. **Revenue grew strongly through 2017, then levelled off in 2018.** The monthly revenue trend rises steeply in 2017 and stays roughly flat through mid-2018.
+4. **Recommendation:** focus marketing and stock on the top categories, and investigate why growth stalled in 2018, for example by checking order volume, delivery times and review scores.
+
+*Revenue is the sum of item prices for delivered orders, excluding freight.*
