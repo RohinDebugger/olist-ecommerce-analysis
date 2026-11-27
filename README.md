@@ -2,6 +2,12 @@
 
 End-to-end analytics project on the Brazilian Olist e-commerce dataset.
 
+## Business questions
+
+1. How much revenue did Olist generate, and how did it change month by month?
+2. When did demand peak, and what likely drove it?
+3. How reliable was fulfilment: what share of orders were delivered, and what share were lost?
+
 ## Tools
 Python, Google BigQuery, SQL, Power BI
 
