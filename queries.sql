@@ -27,7 +27,7 @@ WITH monthly AS (
   GROUP BY month
 )
 SELECT month, revenue,
- LAG(revenue) OVER (ORDER BY month) AS per_revenue,
+ LAG(revenue) OVER (ORDER BY month) AS prev_revenue,
  ROUND((revenue - LAG(revenue) OVER (ORDER BY month)) / LAG(revenue)  OVER (ORDER BY month) * 100,1) AS growth_pct
 FROM monthly
 ORDER BY month 
