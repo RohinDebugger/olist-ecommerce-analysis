@@ -16,6 +16,7 @@ FILES = {
 }
 
 client = bigquery.Client(project=PROJECT)
+client.create_dataset(f"{PROJECT}.{DATASET}", exists_ok=True)
 
 config = bigquery.LoadJobConfig(
     source_format=bigquery.SourceFormat.CSV,
