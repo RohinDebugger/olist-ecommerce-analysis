@@ -48,3 +48,9 @@ CSV files -> Python script -> BigQuery tables -> SQL queries -> Power BI dashboa
 4. **Recommendation:** focus marketing and stock on the top categories, and investigate why growth stalled in 2018, for example by checking order volume, delivery times and review scores.
 
 *Revenue is the sum of item prices for delivered orders, excluding freight.*
+## Data source
+
+Brazilian E-Commerce Public Dataset by Olist, from Kaggle:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+Note: BigQuery sandbox tables expire after 60 days. If they disappear, rerun `load_to_bigquery.py` to rebuild them.
