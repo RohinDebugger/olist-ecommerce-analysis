@@ -17,6 +17,8 @@ CSV files -> Python script -> BigQuery tables -> SQL queries -> Power BI dashboa
 ## Key results (delivered orders only)
 - Total revenue: 13.22M
 - Delivered orders: 96,478
+- 97% of orders were delivered successfully, while 1.2% were lost to cancellation or unavailability.
+- Revenue peaked in November 2017 at about 988K BRL, consistent with Black Friday demand.
 
 ## Dashboard
 ![Dashboard](dashboard.png)
