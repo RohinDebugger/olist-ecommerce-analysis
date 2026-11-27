@@ -1,4 +1,4 @@
-# Olist E-commerce Sales Analysis
+# olist-ecommerce-revenue-analysis
 
 End-to-end analytics project on the Brazilian Olist e-commerce dataset.
 
