@@ -49,8 +49,55 @@ CSV files -> Python script -> BigQuery tables -> SQL queries -> Power BI dashboa
 
 *Revenue is the sum of item prices for delivered orders, excluding freight.*
 ## Data source
+## How to run
+
+1. Download the dataset from Kaggle (link below) and unzip it.
+2. Put the 9 CSV files in the same folder as `load_to_bigquery.py`.
+3. Install the BigQuery library:
+   ```
+   pip install google-cloud-bigquery
+   ```
+4. Log in to Google Cloud:
+   ```
+   gcloud auth application-default login
+   ```
+5. In `load_to_bigquery.py`, change `PROJECT` to your own Google Cloud project ID.
+6. Run the script:
+   ```
+   python load_to_bigquery.py
+   ```
+
+The script creates the dataset if it is missing, loads all 9 tables, and prints the row count for each. Rerunning it replaces the tables, so it never duplicates rows.
+
 
 Brazilian E-Commerce Public Dataset by Olist, from Kaggle:
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+## How to run
+
+1. Download the dataset from Kaggle (link below) and unzip it.
+2. Put the 9 CSV files in the same folder as `load_to_bigquery.py`.
+3. Install the BigQuery library:
+   ```
+   pip install google-cloud-bigquery
+   ```
+4. Log in to Google Cloud:
+   ```
+   gcloud auth application-default login
+   ```
+5. In `load_to_bigquery.py`, change `PROJECT` to your own Google Cloud project ID.
+6. Run the script:
+   ```
+   python load_to_bigquery.py
+   ```
+
+The script creates the dataset if it is missing, loads all 9 tables, and prints the row count for each. Rerunning it replaces the tables, so it never duplicates rows.
+
+## Data source
+
+Brazilian E-Commerce Public Dataset by Olist, from Kaggle:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+Note: BigQuery sandbox tables expire after 60 days. If they disappear, rerun `load_to_bigquery.py` to rebuild them.
 
 Note: BigQuery sandbox tables expire after 60 days. If they disappear, rerun `load_to_bigquery.py` to rebuild them.
